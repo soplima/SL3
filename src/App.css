@@ -1,0 +1,341 @@
+  body {
+    margin: 0;
+    font-family: Tahoma;
+    font-size: 100%; 
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1% 0.5%; 
+    background: #0D1F08;
+    color: white;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+    gap: 1.2rem;
+  }
+
+  .header a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0.1rem 0.1rem;
+    color: #F2F2F2;
+    text-decoration: none;
+  }
+
+  .header a:hover {
+    border-bottom: 2px solid #F2F2F2;
+  }
+
+
+  .logo img {
+    width: 100%;
+    max-width: 200px; 
+    height: auto;
+  }
+
+  .hero {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    color: #0D1F08;
+    text-align: center;
+    padding: 0 10%;
+  }
+
+  .hero-content h1 {
+    margin-top: 2rem;
+    margin-left: 7rem;
+    font-size: 3rem; 
+  }
+
+  .hero-content p {
+    margin-top: 2rem;
+    margin-left: 7rem;
+    font-size: 1.4rem;
+    font-style: italic;
+  }
+
+  .services-section {
+    padding: 6rem 0; 
+    background: #0D1F08;
+    overflow: hidden; 
+  }
+
+  .services-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 5rem;
+    max-width: 100%; 
+    padding-left: 2rem; 
+    margin: 0; 
+    font-family: 'Tahoma', sans-serif;
+  }
+
+  .services-image-wrapper {
+    flex: 1.5; 
+    max-width: 60%; 
+  }
+
+  .side-image {
+    width: 100%;
+    height: auto;
+    max-height: 600px; 
+    object-fit: cover;
+    border-radius: 0 15px 15px 0; 
+    display: block;
+    box-shadow: 15px 10px 40px rgba(0,0,0,0.4); 
+  }
+
+  .services-section {
+    padding: 8rem 10%; 
+    background: #061805; 
+    color: #F2F2F2;
+    font-family: 'Tahoma', sans-serif;
+  }
+
+  .services-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr; 
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .services-title-small {
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+  }
+
+  .services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .service-item {
+    font-size: 4.5rem; 
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -2px;
+    /* Efeito de cascata */
+    opacity: 1;
+  }
+
+  .service-item:last-child {
+    color: #5d6d53; 
+  }
+
+  .services-button-wrapper {
+    grid-column: 2; 
+    margin-top: 4rem;
+  }
+
+  .btn-services {
+    background-color: #ffffff;
+    color: #061805;
+    padding: 1.2rem 3rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    border-bottom: none;
+    display: inline-block;
+  }
+
+  .btn-services:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  .btn-services:hover {
+    transform: scale(1.05);
+  }
+
+
+  .footer-site {
+    background-color: #F5F3E7; 
+    color: #1a1a1a;
+    padding: 100px 5% 40px 5%;
+    font-family: 'Tahoma', sans-serif;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr 2fr; 
+    gap: 20px;
+    align-items: start;
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+    padding-bottom: 60px;
+  }
+
+  .footer-brand-right {
+    text-align: right;
+  }
+
+  .footer-main-title {
+    font-size: 3.5rem; 
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: -2px;
+    line-height: 1;
+  }
+
+  .footer-col p {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+    line-height: 1.4;
+    padding-left: 0;
+  }
+
+  .placeholder-logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .footer-bottom {
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: #888;
+  }
+
+  .footer-logo img {
+    max-width: 200px;
+    height: auto;
+    margin-left: -75px;
+    margin-top: -80px; 
+  }
+
+  @media (max-width: 1024px) {
+    .footer-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .footer-brand-right {
+      text-align: left;
+      grid-column: span 2;
+      order: -1; 
+    }
+  }
+
+    .about-section {
+    background-color: #F5F3E7; 
+    padding: 80px 10%;
+    color: #1a1a1a;
+    text-align: left;
+    font-family: 'Tahoma', sans-serif;
+  }
+
+  .about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .about-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+  }
+
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px; 
+  }
+
+  .column p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .btn-consult {
+    display: inline-block;
+    background-color: #2D0A0A;
+    font-size: 1.1rem;
+    color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 50px;
+    text-decoration: none;  
+    font-weight: bold;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-bottom: none;     
+  }
+
+  .btn-consult:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  .mid-section-container {
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .office-section {
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 900px) {
+    .services-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .services-image-wrapper,
+    .services-content {
+      max-width: 100%;
+    }
+
+    .side-image {
+      max-height: 300px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .about-header h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .mid-section-container {
+      height: 250px;
+      background-attachment: scroll;
+    }
+  }
