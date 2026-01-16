@@ -13,7 +13,7 @@ const Footer = () => {
 
         {/* Contato */}
         <div className="footer-col">
-          <p>deborah@sl3consult.com.br</p>
+          <p>contato@sl3consult.com.br</p>
           <p>(11) 5873-5464</p>
         </div>
 
