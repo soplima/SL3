@@ -10,12 +10,19 @@ const About = () => {
         
         <div className="about-content">
           <div className="column">
-            <p>A SL3 Consultoria consolidou-se como um pilar de excelência 
-              estratégica ao longo de sua trajetória, oferecendo aconselhamento 
-              especializado e soluções sob medida para organizações que buscam 
-              crescimento sustentável, eficiência operacional e decisões mais 
-              seguras. Atuamos de forma integrada em diferentes áreas estratégicas, 
-              sempre com foco na geração de valor real para nossos clientes. 
+            <p>Fundada em 1984, nossa empresa nasceu do compromisso em oferecer serviços contábeis e 
+              jurídicos pautados pela ética, confiança e excelência técnica. Ao longo de mais de quatro 
+              décadas, construímos uma trajetória sólida, acompanhando de perto a evolução da legislação 
+              brasileira e as constantes transformações do ambiente empresarial.
+            </p>
+
+            <p>
+              Atuamos de forma integrada nas áreas de contabilidade, direito tributário e societário, 
+              oferecendo soluções completas, seguras e personalizadas para empresas e pessoas físicas. 
+              Nossa experiência nos permite ir além do cumprimento das obrigações legais, auxiliando nossos 
+              clientes na tomada de decisões estratégicas, na organização financeira e na eficiência fiscal 
+              de seus negócios.
+
               </p>
             
             <a href="#contact" className="btn-consult">
@@ -24,12 +31,19 @@ const About = () => {
           </div>
           
           <div className="column">
-            <p>Combinamos décadas de experiência profissional com uma visão 
-              analítica e atualizada das dinâmicas econômicas, regulatórias e 
-              corporativas. Nossa equipe é formada por especialistas com sólida 
-              formação técnica e histórico comprovado de atuação em ambientes 
-              corporativos exigentes, nos quais precisão, ética e visão estratégica 
-              são essenciais.
+            <p>Como empresa familiar, valorizamos relações de longo prazo, atendimento próximo e 
+              transparente, e o profundo entendimento das necessidades de cada cliente. Aliamos tradição e 
+              inovação, combinando conhecimento técnico consolidado com atualização constante e uso de 
+              práticas modernas.
+            </p>
+
+            <br />
+            <p>
+              Nosso propósito é ser um parceiro confiável e estratégico, contribuindo de forma 
+              consistente para a sustentabilidade, o crescimento e a segurança jurídica dos nossos 
+              clientes. Atuamos com responsabilidade, clareza e comprometimento, oferecendo orientação 
+              técnica sólida e soluções que promovem tranquilidade, previsibilidade e confiança nas 
+              decisões empresariais e patrimoniais.
             </p>
           </div>
         </div>
