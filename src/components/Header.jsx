@@ -1,6 +1,4 @@
-import React from "react";
 import logo from '../assets/logo_horizontal.png';
-
 
 const Header = () => {
   return (

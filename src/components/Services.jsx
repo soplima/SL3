@@ -1,10 +1,8 @@
-import React from "react";
-
 const Services = () => {
   return (
     <section className="services-section" id="services">
       <div className="services-container">
-        
+
         <div className="services-header">
           <h3 className="services-title-small">O Que Oferecemos</h3>
         </div>
