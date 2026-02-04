@@ -22,16 +22,26 @@ jobs:
 
         - run: chmod u+x ./scripts/*
 
-        - name: Generate the build package
-          run: |
-            scripts/pack.sh
-            find . -maxdepth 1 ! -name '__package' ! -name '.' -exec rm -rf {} +
-
         - name: Setup Square Cloud CLI
           run: curl -fsSL https://cli.squarecloud.app/install | bash
 
-        - name: Commit to Square Cloud
+        - name: Login to Square Cloud
+          run: squarecloud auth login --token=${{ secrets.SQUARE_TOKEN }}
+
+        - name: Clean application container
           run: |
-            squarecloud auth login --token=${{ secrets.SQUARE_TOKEN }}
+            curl --request DELETE \
+              --url https://api.squarecloud.app/v2/apps/${{ secrets.SQUARE_APP_ID }}/files \
+              --header 'Authorization: ${{ secrets.SQUARE_TOKEN }}' \
+              --header 'Content-Type: application/json' \
+              --data '
+            {
+              "path": "."
+            }
+            '
+        
+        - name: Upload latest files
+          run: |
+            cd dist
             squarecloud app commit -r ${{ secrets.SQUARE_APP_ID }}
   
