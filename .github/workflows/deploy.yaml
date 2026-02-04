@@ -20,8 +20,6 @@ jobs:
             npm ci
             npm run build
 
-        - run: chmod u+x ./scripts/*
-
         - name: Setup Square Cloud CLI
           run: curl -fsSL https://cli.squarecloud.app/install | bash
 
